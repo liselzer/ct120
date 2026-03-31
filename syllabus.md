@@ -243,7 +243,7 @@ The general arc of the class will be 5ish weeks of client-side (browser-based) J
     * Due: Project Due
 
 
-[]
+# weeks 7-10 TBD!
 
 ## Finals Week: 
 *   
