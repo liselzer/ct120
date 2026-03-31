@@ -1,10 +1,3 @@
-# TODO: fix dates.  merge in stuff from 2025s, add links to readings, files, chat, zoom, etc.
-
-Carrie Hott
-Thursday April 30
-
-Chelsea (maybe week before);
-
 # Introduction to Creative Coding
 
 An up to date version of this syllabus can be found at: https://aphid.github.io/ct120_s26/syllabus.html. 
@@ -72,7 +65,7 @@ If this process causes more anxiety than it alleviates, come to office hours at 
 
 ## The "Offramp"
 
-<img src="le_exit_meme.jpg" alt='exit meme showing text "weekly exercise" for the main highway, "something else entirely" for the offramp, and "inspired me" for the car, veering haphazardly to rhe right.](le_exit_meme.jpg' style="width: 400px">
+(meme missing)
 
 The offramp is a course policy in CT 120 that allows students to, on a week-by-week basis, work on an **approved** project instead of the weekly exercise (more on approval in a moment). This is to allow you to spend time on something that will take more than a week (perhaps several, perhaps the entire quarter if you're feeling ambitious). 
 
