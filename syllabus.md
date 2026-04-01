@@ -1,6 +1,6 @@
 # Introduction to Creative Coding
 
-An up to date version of this syllabus can be found at: https://aphid.github.io/ct120_s26/syllabus.html. 
+An up to date version of this syllabus can be found at: https://aphid.github.io/ct120/syllabus.html. 
 
 **📆📆📆 [JUMP TO THE SCHEDULE](#course-schedule) 📆📆📆**
 
@@ -65,7 +65,7 @@ If this process causes more anxiety than it alleviates, come to office hours at 
 
 ## The "Offramp"
 
-(meme missing)
+<img src="le_exit_meme.jpg" alt='exit meme showing text "weekly exercise" for the main highway, "something else entirely" for the offramp, and "inspired me" for the car, veering haphazardly to rhe right.](le_exit_meme.jpg' style="width: 400px">
 
 The offramp is a course policy in CT 120 that allows students to, on a week-by-week basis, work on an **approved** project instead of the weekly exercise (more on approval in a moment). This is to allow you to spend time on something that will take more than a week (perhaps several, perhaps the entire quarter if you're feeling ambitious). 
 
@@ -100,11 +100,14 @@ Aside from your computer, none of the resources needed for this class should cos
 *   **Primary Texts and Media**
     * [Code as Creative Medium]() by Golan Levin and Tega Brain
     * [Aesthetic Programming](https://www.openhumanitiespress.org/books/titles/aesthetic-programming/) by Winnie Soon and Geoff Cox
-    * [The Coding Train](https://thecodingtrain.com/tracks/code-programming-with-p5-js) by Dan Schiffman (p5js track)
-*   **Software:** (🐧 denotes open source)
+    * [The Coding Train](https://thecodingtrain.com/tracks/code-programming-with-p5-js) by Dan Schiffman
+    * [The Nature of Code](https://natureofcode.com/) by Dan Schiffman (licensed Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)
+    * [Eloquent JavaScript](https://eloquentjavascript.net/) by Marijn Haverbeke (licensed Creative Commons  Attribution-NonCommercial 3.0)
+
+*   **Software:** (🐧 denotes open source, 💸 indicates paid)
     * A text editor or IDE (e.g., [VSCodium](https://vscodium.com/)🐧
 /[VSCode](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/)) 
-    * Media editing tools (e.g., [GIMP](https://www.gimp.org/)🐧, [Audacity](https://www.audacityteam.org/)🐧, Adobe Suite)
+    * Media editing tools (e.g., [GIMP](https://www.gimp.org/)🐧, [Audacity](https://www.audacityteam.org/)🐧, Adobe Suite 💸)
     * A web browser (e.g., Firefox🐧, Chrome, Safari, Brave🐧, Opera, ...)
     * A matrix client to connect to the chat room (element🐧, fluffychat🐧, etc.)
 *   **Services:**
