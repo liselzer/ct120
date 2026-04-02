@@ -20,7 +20,7 @@ An up to date version of this syllabus can be found at: https://aphid.github.io/
 *   **Teaching Assistant:** 
     *   **Name:** Lilly Selzer (she/her)
     *   **Email:** [lselzer@ucsc.edu](mailto:lselzer@ucsc.edu)
-    *   **Office Hours:** TBD. (link [here]())
+    *   **Office Hours:** Wed from 2pm-4pm. (link [here]())
 
 ## Quick Links
 
