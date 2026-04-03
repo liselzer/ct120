@@ -20,7 +20,7 @@ An up to date version of this syllabus can be found at: https://aphid.github.io/
 *   **Teaching Assistant:** 
     *   **Name:** Lilly Selzer (she/her)
     *   **Email:** [lselzer@ucsc.edu](mailto:lselzer@ucsc.edu)
-    *   **Office Hours:** TBD. (link [here]())
+    *   **Office Hours:** Wed from 2pm-4pm. (link [here]())
 
 ## Quick Links
 
@@ -210,7 +210,7 @@ The general arc of the class will be 5ish weeks of client-side (browser-based) J
 *   **Thursday**: Co(de)-working
 *   **Sunday**: Project due
 
-## Week 3: **\<script src="..."\>** cool tools (Apr 21,23)
+## Week 4: **\<script src="..."\>** cool tools (Apr 21,23)
 * **Project** 
     * Try using a library, tool, or framework you've never used before that in some way incorporates coding to make something. Document the process. It may not go well, but that's okay! As you select a tool, consider its license (is it commericial? expensive? open source?), avenues for support and community (a forum? discord? element?). Post a link to the tool in the chat, a brief summary of your experience, a link to what you made (if the tool worked!) and whether you'd recommend it to your peers.
 *   **Readings/Viewings**  
