@@ -242,7 +242,13 @@ The general arc of the class will be 5ish weeks of client-side (browser-based) J
     * Due: Project Due
 
 
-# weeks 7-10 TBD!
+## Week 7:  (May 12, 14)
+*   **Project**
+* **Tuesday**: UI work and other research, Lilly Selzer
+* **Thursday**: co(de)-working
+
+## Weeks 8-10:  TBD based on student interests and priorities
+
 
 ## Finals Week: 
 *   
@@ -268,7 +274,7 @@ Title IX prohibits gender discrimination, including sexual harassment, domestic 
 Faculty and Teaching Assistants are required under the UC Policy on Sexual Violence and Sexual Harassment to inform the Title IX Office should they become aware that you or any other student has experienced sexual violence or sexual harassment. Although I have to make that notification, you will control how your case will be handled, including whether or not you wish to pursue a formal complaint. The goal is to make sure that you are aware of the range of options available to you and that you have access to the resources you need.
  
 #### Justice, Equity, Inclusion
-Numerous campus resources offer support and grievance channels for students concerned about potential injustice, inequity, or exclusionary practices. The Office of Diversity, Equity, and Inclusion <https://diversity.ucsc.edu/index.html> provides resources for students experiencing or observing discrimination, and assists campus partners in cultivating a healthy campus climate in which all students, staff and faculty are treated respectfully and able to thrive and succeed; and everyone including current affiliates, alumni, supporters and community members is welcomed.Students concerned about bias, exclusion, or discrimination may report potential instances at <https://biasresponse.ucsc.edu/>. Please consult resources at the Title IX Office (see above) to report or raise concerns about gender discrimination or harassment, violence, or bullying on the basis of gender and sexuality; the CARE Office <https://care.ucsc.edu/> offers additional resources for survivors of gender- and sexuality-based violence and harassment. The Arts Division is committed to powerful outcomes in the pursuit of justice, equity, and inclusion; more information about those commitments is at <https://arts.ucsc.edu/page/arts-division-diversity-equity-and-inclusion-dei-statement>.
+Numerous campus resources offer support and grievance channels for students concerned about potential injustice, inequity, or exclusionary practices. The [Office of Diversity, Equity, and Inclusion](https://diversity.ucsc.edu/index.html) provides resources for students experiencing or observing discrimination, and assists campus partners in cultivating a healthy campus climate in which all students, staff and faculty are treated respectfully and able to thrive and succeed; and everyone including current affiliates, alumni, supporters and community members is welcomed.Students concerned about bias, exclusion, or discrimination may report potential instances at <https://biasresponse.ucsc.edu/>. Please consult resources at the Title IX Office (see above) to report or raise concerns about gender discrimination or harassment, violence, or bullying on the basis of gender and sexuality; the CARE Office <https://care.ucsc.edu/> offers additional resources for survivors of gender- and sexuality-based violence and harassment. The Arts Division is committed to powerful outcomes in the pursuit of justice, equity, and inclusion; more information about those commitments is at <https://arts.ucsc.edu/page/arts-division-diversity-equity-and-inclusion-dei-statement>.
  
 #### Harassment, bias, and bullying
 The University of California, Santa Cruz expressly prohibits students from engaging in conduct constituting unlawful discrimination, harassment or bias. In keeping with the UCSC Principles of Community, we expect students and their guests to refrain from any acts or behaviors that are directed at other members of the campus community, and that result in unlawful discrimination, harassment or bias for an individual or group, and/or that substantially disrupt University operations or interfere with the rights of others. The campus does not seek to limit freedom of speech but rather strives to ensure that all members of the campus community are able to participate in University programs and activities to the fullest extent possible.
