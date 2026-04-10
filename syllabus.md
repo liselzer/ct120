@@ -250,7 +250,6 @@ The general arc of the class will be 5ish weeks of client-side (browser-based) J
 
 
 ## Finals Week: 
-*   
 *   Reminder: Have completed [Code Review](#code-review) by end of finals week
 
 
