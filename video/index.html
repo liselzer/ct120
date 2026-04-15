@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ct 120 videos</title>
+    
+<style>
+    body {
+        font-family: sans-serif;
+        background: #DFC9DF;
+        background: radial-gradient(circle, rgba(223, 201, 223, 1) 0%, rgba(201, 223, 223, 1) 50%, rgba(206, 184, 206, 1) 100%);
+        margin: 20px;
+        font-size: 1.5em;
+    }
+
+    details {
+        cursor: pointer;
+    }
+
+    details ul,
+    details .transcript {
+        cursor: auto;
+    }
+
+    .toc {
+        font-size: 14pt;
+    }
+
+    .transcript {
+        font-size: 12.5pt;
+        max-height: 300px;
+        overflow-y: scroll;
+        max-width: 700px;
+        border: 1px dotted darkblue;
+        padding: 4px;
+    }
+
+    .transcript div:hover,
+    .toc li:hover {
+        cursor: alias;
+    }
+
+    video,
+    .fullimg {
+        display: block;
+        width: 80vw;
+    }
+
+    aside {
+        font-size: .8em;
+    }
+
+    .disc {
+        color: maroon;
+    }
+
+    .notyet {
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    section {
+        border: 1px dotted rgba(58, 59, 60, 0.5);
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+</style>
+<script src="chapters.js" defer></script>
+
+</head>
+<body>
+
+    <h1>ct 120 videos</h1>
+    <div>
+        <h3>table of contents</h3>
+        <ul>
+            <li><a href="#chessboard">🏁 chessboard 🏁</a></li>
+        </ul>
+        <p><span class="disc">disclaimer:</span> captions are generated using openWhisper en.small and probably contain
+            mistakes</p>
+    </div>
+
+    <section id="chessboard">
+        <h3>🏁 chessboard 🏁 (pt1)</h3>
+        <p>working through the chessboard exercise</p>
+        <video controls src="https://aphid.org/ct120/video/chessboard_.mp4">
+            <track kind="captions" src="https://aphid.org/ct120/video/chessboard.en.vtt" srclang="en" default>
+            <track kind="chapters" src="https://aphid.org/ct120/video/chessboard.chapters" srclang="en" default>
+
+        </video>
+        <div id="nav"></div>
+        <p><a href="https://github.com/aphid/ct120/tree/main/examples/loops">source code</a> and live on the web: 
+            <ul>
+                <li><a href="https://aphid.github.io/ct120/examples/loops/chess.html">first example (basic chessboard)</a></li>
+                <li><a href="https://aphid.github.io/ct120/examples/loops/chessboardarrays.html"></a>second example (binary string arrays, low key buggy!)</li>
+                <li><a href="https://aphid.github.io/ct120/examples/loops/chessboardarrays.html"></a>a chessboard as timed tones</li>
+            </ul>
+    </section>
+
+
+</body>
+
+</html>
