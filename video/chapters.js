@@ -1,9 +1,11 @@
 let vids = document.querySelectorAll("video");
-
+console.log("okay!");
 
 for (let vid of vids){
+    console.log("trying", vid);
     for (let t of vid.textTracks){
         if(t.kind === "chapters"){
+            console.log("processing", vid, t);
             processChapters(vid,t);
         }
     }
@@ -12,6 +14,17 @@ for (let vid of vids){
 
 function processChapters(vid,track){
     let id = vid.closest("section").id;
+    let cues = track.cues;
+
+    let sec = `<section id=${id}_chapters>
+        <ul>`;
+    for (let cue of cues){
+        sec += `<li><a class="chapterlink" data-start="${cue.startTime}">${cue.text}</a></li>`;
+    }
+    sec += `</ul></section>`;
+    vid.closest("section").querySelector("nav").innerHTML = sec;
+
+
 }
 
 /*
