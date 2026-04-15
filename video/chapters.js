@@ -7,11 +7,15 @@ for (let t of tracks) {
     }
     let vid = t.closest("video");
     console.log("trying", vid);
+    console.log(t.readyState);
     if (t.readyState < 2){
+        console.log("track hasn't loaded yet.")
         t.addEventListener("loaded",function(){
+            console.log("now it has.")
             processChapters(vid,t);
         });
     } else {
+        console.log("track has loaded");
         processChapters(vid,t);
     }
     
