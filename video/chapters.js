@@ -2,7 +2,7 @@ let tracks = document.querySelectorAll("track");
 //console.log("okay!");
 
 for (let t of tracks) {
-    if (track.kind !== "chapters"){
+    if (t.kind !== "chapters"){
         continue;
     }
     let vid = t.closest("video");
