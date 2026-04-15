@@ -28,11 +28,12 @@ function processChapters(vid, track) {
     let vtracks = vid.textTracks;
     let trk;
     for (let t of vtracks){
+        console.log(t);
         if (t.kind === "chapter"){
             trk = t;
         }
     }
-
+    console.log(trk);
     let id = vid.closest("section").id;
     let cues = trk.cues;
     console.log(cues.length);
