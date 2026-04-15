@@ -28,8 +28,8 @@ function processChapters(vid, track) {
     let vtracks = vid.textTracks;
     let trk;
     for (let t of vtracks){
-        console.log(t);
-        if (t.kind === "chapter"){
+        //console.log(t);
+        if (t.kind === "chapters"){
             trk = t;
         }
     }
