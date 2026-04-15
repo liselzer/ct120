@@ -40,11 +40,17 @@ function processChapters(vid, track) {
     let sec = `<section id=${id}_chapters>
         <ul>`;
     for (let cue of cues) {
-        sec += `<li><a class="chapterlink" data-start="${cue.startTime}">${cue.text}</a></li>`;
+        sec += `<li><a class="chapterlink" href="#" data-start="${cue.startTime}">${cue.text}</a></li>`;
     }
     sec += `</ul></section>`;
-    vid.closest("section").querySelector("nav").innerHTML = sec;
+    let nav = vid.closest("section").querySelector("nav")
+    nav.innerHTML = sec;
 
+    for (let a  of nav.querySelectorAll("a")){
+        a.addEventListener("click",function(){
+            vid.currentTime = this.dataset.start;
+        })
+    }
 
 }
 
