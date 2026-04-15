@@ -3,24 +3,29 @@ let vids = document.querySelectorAll("video");
 
 for (let vid of vids) {
     console.log("trying", vid);
-    for (let t of vid.textTracks) {
-        if (t.kind === "chapters") {
-            console.log("found chapters");
-            t.addEventListener("load", function () {
-                console.log("eep");
-                processChapters(vid, t);
+    vid.addEventListener("loadedmetadata", function () {
+        for (let t of vid.textTracks) {
+            if (t.kind === "chapters") {
+                console.log(t.readyState);
+                console.log("found chapters");
+                t.addEventListener("load", function () {
+                    console.log("eep");
+                    processChapters(vid, t);
 
-            });
+                });
 
-             t.addEventListener("loaded", function () {
-                console.log("eep");
-                processChapters(vid, t);
+                t.addEventListener("loaded", function () {
+                    console.log("eep");
+                    processChapters(vid, t);
 
-            });
-            //conso
-            //console.log("processing", vid, t);
+                });
+                //conso
+                //console.log("processing", vid, t);
+            }
+
         }
-    }
+    });
+
 
 }
 
