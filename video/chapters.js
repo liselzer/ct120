@@ -1,11 +1,15 @@
 let vids = document.querySelectorAll("video");
-console.log("okay!");
+//console.log("okay!");
 
 for (let vid of vids){
     console.log("trying", vid);
     for (let t of vid.textTracks){
         if(t.kind === "chapters"){
-            console.log("processing", vid, t);
+
+            t.addEventListener("loaded", function(){
+                console.log("eep");
+            });
+            //console.log("processing", vid, t);
             processChapters(vid,t);
         }
     }
