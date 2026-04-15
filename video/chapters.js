@@ -38,17 +38,19 @@ function processChapters(vid, track) {
     let cues = trk.cues;
     console.log(cues.length);
     let sec = `<section id=${id}_chapters>
+    <details><summary>Chapters</summary>
         <ul>`;
     for (let cue of cues) {
         sec += `<li><a class="chapterlink" href="#" data-start="${cue.startTime}">${cue.text}</a></li>`;
     }
-    sec += `</ul></section>`;
+    sec += `</ul></details></section>`;
     let nav = vid.closest("section").querySelector("nav")
     nav.innerHTML = sec;
 
     for (let a  of nav.querySelectorAll("a")){
-        a.addEventListener("click",function(){
+        a.addEventListener("click",function(event){
             vid.currentTime = this.dataset.start;
+            event.preventDefault()
         })
     }
 
