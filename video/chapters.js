@@ -1,28 +1,29 @@
 let vids = document.querySelectorAll("video");
 //console.log("okay!");
 
-for (let vid of vids){
+for (let vid of vids) {
     console.log("trying", vid);
-    for (let t of vid.textTracks){
-        if(t.kind === "chapters"){
+    for (let t of vid.textTracks) {
+        if (t.kind === "chapters") {
 
-            t.addEventListener("load", function(){
+            t.addEventListener("load", function () {
                 console.log("eep");
+                processChapters(vid, t);
+
             });
             //console.log("processing", vid, t);
-            processChapters(vid,t);
         }
     }
 
 }
 
-function processChapters(vid,track){
+function processChapters(vid, track) {
     let id = vid.closest("section").id;
     let cues = track.cues;
     console.log(cues.length);
     let sec = `<section id=${id}_chapters>
         <ul>`;
-    for (let cue of cues){
+    for (let cue of cues) {
         sec += `<li><a class="chapterlink" data-start="${cue.startTime}">${cue.text}</a></li>`;
     }
     sec += `</ul></section>`;
