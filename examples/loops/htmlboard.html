@@ -48,13 +48,21 @@
     let colors = ["black", "white"];
     let anims = ["blk2purp", "white2purp"];
 
+    //the url to this page
+    let theUrl = window.location.href;
+    console.log(theUrl);
+    let url = new URL(theUrl);
+    let mode = url.searchParams.get("mode") || "background";
+    console.log(mode);
+
+
     for (let i = 0; i < thecount; i++) {
 
         for (let j = 0; j < thecount; j++) {
             if ((i + j) % 2 == 0) {
-                square(0);
+                square(0, mode);
             } else {
-                square(1);
+                square(1, mode);
             }
         }
         let br = document.createElement("br");
@@ -62,8 +70,8 @@
     }
 
 
-    function square(color) {
-        let mode = "background"; //change to animation for animation!
+    function square(color, mode) {
+        //mode = "background"; //change to animation for animation!
 
         let div = document.createElement("div");
         div.style.height = `${100 / thecount}vw`;
