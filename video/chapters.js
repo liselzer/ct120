@@ -33,11 +33,11 @@ function processChapters(vid, track) {
     let id = vid.closest("section").id;
     let cues = trk.cues;
     let sec = `<details id=${id}_chapters><summary>Chapters (${cues.length})</summary>
-        <ul>`;
+        <ol>`;
     for (let cue of cues) {
         sec += `<li><a class="chapterlink" href="#" data-start="${cue.startTime}">${cue.text}</a></li>`;
     }
-    sec += `</ul></details></section>`;
+    sec += `</ol></details></section>`;
     let nav = vid.closest("section").querySelector("nav")
     nav.innerHTML = sec;
 
