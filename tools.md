@@ -31,13 +31,14 @@
 * [godot](https://godotengine.org/) - a full fledged open source gaming engine
 * [Threejs](https://threejs.org/) a general-purpose 3d library for JavaScript that uses the HTML canvas.
 * [Babylon.js](https://www.babylonjs.com/) a powerful, open, and simple 3d engine for browsers. Newer than three.js and perhaps leaner (older projects have bigger communities but more "legacy" code to maintain)
+* [defold](https://defold.com/) a game engine that runs on lua. free and source available (not quite open source but close).
 
 ## text/hypertext/hypermedia
 
 * [Twine](https://twinery.org/) a framework for making interactive hypertext nonlinear fiction (or nonfiction)
 * [Tracery](https://tracery.io/) a tool for making dynamically generated text (for bots, among other things - [like for mastodon](https://cheapbotstootsweet.com/) or [bsky](https://bluebotsdonequick.com/))
 * [RevealJS](https://revealjs.com/) an HTML/md slideshow library, but could be (mis?)used for shell games, hypertext (non-)fiction
-* [HyperCard](https://hypercard.org/) - a pre-web mac app/tool for hypermedia, many open source remakes/emulators abound
+* [CreateJS](https://createjs.com/) - a suite of tools for making interactive html5 things (used for [Interruption Junction](https://squinky.itch.io/interruption-junction))
 
 ## p5js
 
@@ -48,3 +49,11 @@
 * [browser/web apis](https://developer.mozilla.org/en-US/docs/Web/API)
 * [python scripting inside krita](https://docs.krita.org/en/user_manual/python_scripting/introduction_to_python_scripting.html - krita is an open source drawing program; there's a python interface)
 * \[...\]
+
+## emulation/nostalgia
+
+* [jpexs](https://github.com/jindrapetrik/jpexs-decompiler)
+* [HyperCard](https://hypercard.org/) - a pre-web mac app/tool for hypermedia, many open source remakes/emulators abound
+* [basiliskii](https://www.emaculation.com/doku.php/sheepshaver_basiliskii_linux?__cf_ch)   old mac emulator (early 90s)
+* [sheepshaver](https://www.emaculation.com/doku.php/sheepshaver_basiliskii_linux?__cf_ch)  old mac emulator (late 90s)
+* 
