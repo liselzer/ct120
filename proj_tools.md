@@ -24,6 +24,6 @@ As you consider tools, also consider what support exists for them:
 * If your experiment doesn't end in something you can share, turn in something that documents your experience of trouble and troubleshooting. 
 * **Anticipate trouble and document as you work.**
 
-# [Croudsourced Tool List](tools.md)
+# [Crowdsourced Tool List](tools.md)
 
 Feel free to consult the above link (or add to it with a pull request, or using the [resources channel](https://matrix.to/#/!AfxDPKZusTndHDLjLT:matrix.org?via=matrix.org) on the chat).
