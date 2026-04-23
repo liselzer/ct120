@@ -6,6 +6,8 @@ Please add things to this list (or post them in the chat, &amp; I'll add them).
 
 some of these projects have been around a long time, so documentation you find might not be up to date. some may have requirements that are difficult to satisfy (e.g., videogrep &amp; a particular version of python). 
 
+if you find resources (documentation, tutorials, community boards) for a project that are useful, share them!
+
 ## audio/video
 
 * [Strudel](https://strudel.cc) - procedurally generated music (based on [tidal cycles](https://tidalcycles.org/))
@@ -14,8 +16,10 @@ some of these projects have been around a long time, so documentation you find m
         * [Incorporating into a project](https://strudel.cc/technical-manual/project-start/)
         * embeddable from their website with or without UI
         * can be downloaded/run locally (or on your own server) using npm
+    * **Tutorial**
+        * [strudel basics](https://strudel.patternclub.org/workshop/strudel-basics/)
     * **Community/Support**
-        * Github, mastodon, discord
+        * Github, mastodon, discord, subreddit
 * [Supercollider](https://supercollider.github.io/) - a platform for audio synthesis.
     * **Dependencies** desktop app (windows, macos, linux)
     * **Installation**
