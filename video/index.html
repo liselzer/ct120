@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ct 120 videos</title>
-
+    <script src="toc.js" defer></script>
+    <script src="chapters.js" defer></script>
     <style>
         body {
             font-family: sans-serif;
@@ -80,8 +81,14 @@
             font-size: 1em;
         }
 
-        h2 {
+        .tutorial h2 {
             font-size: .9em;
+            display: inline-block;
+            position: sticky;
+            padding: 3px;
+            top: 0;
+            width: auto;
+            background: rgba(199,199,199,0.3)
         }
 
         h3 {
@@ -126,12 +133,13 @@
             <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/scriptz.mp4">
                 <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/scriptz.en.vtt"
                     srclang="en" default>
-                <track crossorigin="anonymous" kind="chapters"
-                    src="https://aphid.org/ct120/video/scriptz.chapters.vtt" srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters" src="https://aphid.org/ct120/video/scriptz.chapters.vtt"
+                    srclang="en" default>
             </video>
             <ul>
-                <li><a href="../examples/script/index.html"></a>live pages from video</li>
-                <li><a href="https://strudel.cc/technical-manual/project-start/">strudel's 'use in your project' guide</a></li>
+                <li><a href="../examples/script/index.html">live pages from video</a></li>
+                <li><a href="https://strudel.cc/technical-manual/project-start/">strudel's 'use in your project'
+                        guide</a></li>
                 <li><a href="https://github.com/aphid/ct120/tree/main/examples/script/">code on github</a></li>
             </ul>
         </section>
@@ -243,8 +251,6 @@
         </section>
     </section>
 
-    <script src="chapters.js" defer></script>
-    <script src="toc.js" defer></script>
 </body>
 
 </html>

@@ -29,13 +29,12 @@ function processChapters(vid, track) {
             trk = t;
         }
     }
-    console.log(trk);
     let id = vid.closest("section").id;
     let cues = trk.cues;
     let sec = `<details open id=${id}_chapters><summary>Chapters (${cues.length})</summary>
         <ol>`;
     for (let cue of cues) {
-        sec += `<li><a class="chapterlink" href="#" data-start="${cue.startTime}">${cue.text}</a></li>`;
+        sec += `<li><a class="chapterlink" href="#" data-start="${cue.startTime}">${cue.text}</a> <span class="duration">${tocDur(cue.startTime, cue.endTime)}</span></li>`;
     }
     sec += `</ol></details></section>`;
     let nav = vid.closest("section").querySelector("nav");
@@ -54,7 +53,17 @@ function processChapters(vid, track) {
         })
     }
 
+
+
 }
+
+function tocDur(start,end){
+    let dur = end - start;
+    return formatDuration(dur);
+
+}
+
+
 
 /*
 textTracks[0];

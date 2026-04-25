@@ -6,7 +6,7 @@ for (let i = 0; i < tuts.length; i++) {
     list = toc.querySelector("#oltoc");
     let tut = tuts[i];
     let li = document.createElement("li");
-    if (!tut.classList.contains("group") && !tut.classList.contains("tutorial")){
+    if (!tut.classList.contains("group") && !tut.classList.contains("tutorial")) {
         console.log("wrong kind of section", tut);
         continue;
     }
@@ -43,28 +43,31 @@ for (let i = 0; i < tuts.length; i++) {
 
 }
 
-
 function showDuration(vid, li) {
     let dur = vid.duration;
-    console.log(dur);
-    let duration, hms;
+    let duration;
     if (dur) {
-        let hms = new Date(dur * 1000).toISOString().slice(11, 19);
-        dur = hms.split(":");
-        duration = "";
-        if (parseInt(dur[0])) {
-            duration += `${dur[0]}h`;
-        }
-        if (parseInt(dur[1])) {
-            duration += `${dur[1]}m`;
-        }
-        if (parseInt(dur[2])) {
-            duration += `${dur[2]}s`;
-        }
+        duration = formatDuration(dur);
     } else {
         duration = "???";
     }
     let durspan = li.querySelector(".duration");
     durspan.textContent = duration;
     durspan.style.opacity = 1;
+}
+
+function formatDuration(seconds) {
+    let hms = new Date(seconds * 1000).toISOString().slice(11, 19);
+    dur = hms.split(":");
+    duration = "";
+    if (parseInt(dur[0])) {
+        duration += `${dur[0]}h`;
+    }
+    if (parseInt(dur[1])) {
+        duration += `${dur[1]}m`;
+    }
+    if (parseInt(dur[2])) {
+        duration += `${dur[2]}s`;
+    }
+    return duration
 }
