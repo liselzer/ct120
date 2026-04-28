@@ -29,7 +29,6 @@ for (let i = 0; i < tuts.length; i++) {
         if (tut.closest(".group")) {
             let g = tut.closest(".group");
             list = document.querySelector(`ol#toc${g.id}`)
-
         }
         list.appendChild(li);
 

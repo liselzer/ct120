@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logic</title>
+    <style>
+        #result { font-size: 4em;}
+    </style>
+</head>
+<body>
+    
+<section id="result"></section>
+
+<script>
+//logical operations (such as those used in if statements, loops, etc.) are not about testing true or false. they're about what's truthy/falsy - the results of operations and functions. 
+
+//this is something to consider when you design your own functions/methods in terms of what they return.
+
+//a function that returns something truthy/falsy can be invoked in many more ways.
+
+
+if (true){
+    //this will always run
+}
+
+if (false){
+    //this will never run
+}
+
+if ("car"){
+    //this will always run
+}
+
+if (10-9){
+    //always
+}
+
+if (10-10){
+    //never
+}
+
+if (""){
+    //never
+}
+
+if (" "){
+    //always
+}
+
+
+let asdf = prompt("guess the word!");
+
+if (asdf.toLowerCase().includes("bob") && !asdf.toLocaleLowerCase().includes("boba")){
+   result.textContent = "yay!";
+} 
+
+</script>
+
+
+</body>
+</html>

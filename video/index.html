@@ -124,6 +124,29 @@
             <p>raw video & transcripts can be found <a href="https://aphid.org/ct120/video/">in this directory</a>.</p>
         </div>
     </header>
+
+    <section id="refreshers" class="group">
+        <h1>♻️ refreshers ♻️</h1>
+
+        <section class="tutorial" id="types">
+            <h2>types </h2>
+            <h3>booleans, numbers, strings, objects, arrays, and other types</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/types.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/types.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters" src="https://aphid.org/ct120/video/types.chapters.vtt"
+                    srclang="en" default>
+            </video>
+
+            <div class="notes">
+                <p>TK</p>
+            </div>
+            <ul>
+            </ul>
+        </section>
+
+    </section>
+
     <section id="cool_tools" class="group">
         <h1>third party tools, scripts, and such 🧰🪚🪥🪛🔮🔥</h1>
 
@@ -137,7 +160,9 @@
                     srclang="en" default>
             </video>
 
-            <div class="notes"><p>Note: the <em>defer</em> keyword/attribute only works in SCRIPT tags that have the SRC attribute set.</p>
+            <div class="notes">
+                <p>Note: the <em>defer</em> keyword/attribute only works in SCRIPT tags that have the SRC attribute set.
+                </p>
             </div>
             <ul>
                 <li><a href="../examples/script/index.html">live pages from video</a></li>
@@ -170,8 +195,9 @@
             <p>eloquent JS has a <a href="https://eloquentjavascript.net/11_async.html">good chapter on asynchronous
                     programming</a></p>
             <ul>
-                <li><a href="https://github.com/aphid/ct120/tree/main/examples/loops">source code</a> and <a href="https://aphid.github.io/ct120/examples/loops/">live on the
-                    web</a></li>
+                <li><a href="https://github.com/aphid/ct120/tree/main/examples/loops">source code</a> and <a
+                        href="https://aphid.github.io/ct120/examples/loops/">live on the
+                        web</a></li>
 
                 <li><a href="https://chelsea-thompto-teaching-examples.github.io/chess-board-example/">Chelsea Thompto's
                         <em>For Loop Chess Board</em> </a></li>
@@ -255,7 +281,42 @@
             </ul>
         </section>
     </section>
+    <section id="serverside" class="group">
+        <h1>server side, the command line, and related topics</h1>
+        <section class="tutorial" id="clintro">
+            <h2>in the beginning was the command line...</h2>
+            <video controls crossorigin="anonymous" src="">
+                <track crossorigin="anonymous" kind="captions" src=""
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters"
+                    src="" srclang="en" default>
+            </video>
 
+
+            <div id="notes">
+                <ul>
+                    <li>Sam Lavigne's <a href="https://scrapism.lav.io/intro-to-the-command-line/">command line
+                            tutorial</a>
+                    </li>
+                    <li><a href="https://nodejs.org/en">Node.js</a></li>
+                    <li><a href="https://www.npmjs.com">npm</a> (node package manager)</li>
+                    <li><a href="https://github.com/nvm-sh/nvm">nvm</a> (node version manager, for macos and linux) and <a href="https://github.com/coreybutler/nvm-windows">nvm-windows</a> (for windows)</li>
+                    <li><a href="https://www.duckdns.org/">DuckDNS</a>, useful for having a persistent domain pointing
+                        at a
+                        home
+                        server (especially with an unstable IP address).</li>
+                    <li><a href="https://vercel.com/pricing">vercel</a> serverless hosting</li>
+                    <li><a href="https://www.cloudflare.com/plans/developer-platform/">cloudflare workers</a> serverless
+                        hosting
+                    </li>
+                    <li>DigitalOcean <a href="https://www.digitalocean.com/pricing/droplets">VPS</a>, a virtual server
+                        that
+                        is
+                        effectively a full fledged remote linux box.</li>
+                </ul>
+            </div>
+        </section>
+    </section>
 </body>
 
 </html>
