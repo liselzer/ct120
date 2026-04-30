@@ -22,7 +22,7 @@ An up to date version of this syllabus can be found at: https://aphid.github.io/
     *   **Email:** [lselzer@ucsc.edu](mailto:lselzer@ucsc.edu)
     *   **Office Hours:** Wed from 2pm-4pm. (link [here]())
 *   **Nautilus Diplomat:**
-    *   **Name:** Ethan Remrick (he/him)
+    *   **Name:** Ethan Remick (he/him)
     *   **Email:** TBA
     *   **Office Hours:** TBA
 
