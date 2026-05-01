@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>types refresher</title>
+    <style>
+        main {
+            font-size: 1.8em;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        section {
+            border: 2px dotted pink;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1em;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="bools">
+        <h1>booleans</h1>
+        <div></div>
+    </section>
+    <section id="nums">
+        <h1>numbers</h1>
+        <pre></pre>
+    </section>
+
+    <section id="str">
+        <h1>strings</h1>
+        <pre></pre>
+    </section>
+
+    <section id="arr">
+        <h1>arr(🏴‍☠️)ays</h1>
+        <pre></pre>
+    </section>
+
+    <section id="obj">
+        <h1>objects</h1>
+        <pre></pre>
+    </section>
+</body>
+
+<script>
+    //////////////////////////BOOLEANS
+    let tests = [false, undefined, 0, -0, [],[].length, {}, null, NaN, "false"];
+    let boolpre = bools.querySelector("div");
+    boolpre.innerHTML = `<pre>testing the following array:
+[false, undefined, 0, -0, [], {}, null, NaN, "'false'"]
+-----------------------------------------------------------</pre>`;
+
+    for (let t of tests) {
+        boolpre.innerHTML += `<p><code>${t}: </code><span>${Boolean(t)}</span></p>`;
+    }
+
+    //////////////////numbers
+    nums.querySelector("pre").textContent = `
+    2 + 2:               ${2 + 2} //add
+    2 - 2:               ${2 - 2} //subtract
+    2 * 2:               ${2 * 2} //multiply
+    2 / 2:               ${2 / 2} //divide
+    2 % 2:               ${2 % 2} //modulo (remainder)
+    2.2 + 0.2:           ${2.2 + 0.2} //floats [reliable to ~15-17 digits!!]
+    1e3:                 ${1e3} //scientific notation, exponents (1 x 10^3)
+    parseInt("15"):      ${parseInt(15)} //default base 10;
+    parseInt("1111",2)   ${parseInt("1111", 2)} // reading base 2;
+    parseFloat("15.5px") ${parseFloat("15.5px")} //reading a css value`;
+
+    ////////////////////strs
+    let dog = "Rosie";
+    let pre = str.querySelector("pre");
+    pre.textContent = `
+    "Rosie":                ${"Rosie"} //a string
+    'Rosie':                ${'Rosie'} //a string
+    \`Rosie \${2 + 2}\`        ${"Rosie " + (2 + 2)} //template literal string
+    let dog = "Rosie";
+    dog:                    ${dog} //a string
+    dog + "bear":           ${dog + "bear"} //concatenate
+    "5" + 2:                ${"5" + 2} //concatenate!!!
+    "five" + "two":         ${"five" + "two"} //concatenate!!!
+    "Rosie,bear".split(",") ${JSON.stringify("Rosie,bear".split(","))} //split - results in array
+    dog[0]                  ${dog[0]} //array-like access to string chrs
+    dog.includes("Ro")      ${dog.includes("Ro")} //fragment in whole?
+    dog.includes("No")      ${dog.includes("No")} //fragment in whole?
+    dog.toUpperCase()       ${dog.toUpperCase()} //capitalism
+    dog.toLowerCase()       ${dog.toLowerCase()} //anti-capitalism
+    dog.indexOf("si")       ${dog.indexOf("si")} //position of substr
+    dog.indexOf("no")       ${dog.indexOf("no")} //position of substr (not found -- -1 resolves to True!!!!)
+    
+    //don't do this
+    if (dog.indexOf("No")){
+        console.log("found it")
+    }
+    ==================
+    `;
+    if (dog.indexOf("No")) {
+        pre.innerHTML = pre.innerHTML + "found it";
+    }
+
+    /////////////////////////////arrrays
+
+    let arrs = arr.querySelector("pre");
+    let fruits = ["apple", "banana", "pear"];
+    arrs.textContent = `
+    let fruits = ["apple", "banana", "pear"];
+    fruits[0]:                  ${fruits[0]} //array item at index
+    fruits.length():            ${fruits.length} //items in array
+    fruits.push("plum"):        ${fruits.push("plum")} //add to end of array, returns new length
+    fuits.length():             ${fruits.length} //items in array
+    fruits.pop():               ${fruits.pop()} //remove and return last item
+    fruits.length():            ${fruits.length} //items in array
+    fruits.join(" and "):       ${fruits.join(" and ")} //make string with arg between
+
+`
+
+    let frootz = fruits;
+    frootz[1] = "peach";
+    let veg = [...fruits];
+    veg[0] = "peas";
+    veg[1] = "squash";
+    arrs.textContent +=
+        `    let frootz = fruits         //beware, not a copy!
+    frootz[1] = "peach"     
+    frootz[1]:                  ${frootz[1]}
+    fruits[1]:                  ${fruits[1]} //changed one via the other!
+
+    let veg = [...fruits]:      //copy
+    veg[0] = "peas"
+    veg[1] = "squash"
+    veg:                        ${JSON.stringify(veg)};
+    fruits:                     ${JSON.stringify(fruits)}
+    veg.includes("peas"):       ${veg.includes("peas")} //item in array?
+    fruits.includes("peas"):    ${fruits.includes("peas")} //item in array?
+    veg.indexOf("peas"):        ${veg.indexOf("peas")} //index of item in array 
+    veg[veg.indexOf("peas")]:   ${veg[veg.indexOf("peas")]} //veg[0] --> peas`
+
+    ////////////////obj
+
+    let objzs = obj.querySelector("pre");
+    let x = "age";
+    dog = { name: "Rosie", age: 3, weight: 51, tricks: ["sit", "leave it", "catch", "find it", "stay", "break", "touch"] }
+    objzs.textContent = `
+    let x = "age";
+    let dog = {name: "Rosie", age: 3, weight: 51, tricks: ["sit", "leave it", "catch", "find it", "stay", "break", "touch"]};
+    
+    dog.age                     ${dog.age} //access property
+    dog.tricks[0]               ${dog.tricks[0]} //access index of property$
+    dog.tricks.length           ${dog.tricks.length} //property length
+    dog.tricks.push("place")    ${dog.tricks.push("place")} //new length
+    dog["name"]                 ${dog["name"]} //access property, arraylike 
+    dog.x                       ${dog.x} //unset property
+    dog[x]                      ${dog[x]} //x->age`
+    delete dog.name;
+    objzs.textContent += `
+    delete dog.name             
+    dog.name                    ${dog.name} //has been unset
+
+
+    
+    `
+
+</script>
+
+</html>

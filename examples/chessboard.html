@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chessboard</title>
+</head>
+
+<body>
+
+    <pre id="chess">
+    </pre>
+</body>
+
+
+<script>
+
+    let size = 17;
+
+    function board(count) {
+        let theboard = "";
+
+        for (let i = 0; i < count; i++) {
+            for (let j = 0; j < count; j++) {
+                if ((i + j) % 2 == 0) {
+                    theboard += "#";
+                }
+                else {
+                    theboard += " ";
+                }
+            }
+            theboard += "\n";
+        }
+
+        return theboard;
+    }
+
+    //document.querySelector("#chess").textContent = board(size);
+
+    //document.querySelector("#chess").textContent = board(size);
+    let b = otherBoard(15);
+    console.log(b.join("\n"));
+
+    function otherBoard(size) {
+        let lines = [];
+        lines.push(makeLine(size));
+
+        while (lines.length < size){
+            let nuLine = "";
+            let lastLine = lines[lines.length - 1];
+            for (let chr of lastLine){
+                nuLine += (Number(!parseInt(chr)));
+            }
+            lines.push(nuLine);
+
+        }
+        return renderBoard(lines);
+
+    }
+
+    function renderBoard(board){
+        let nuBoard = [];
+        for (let b of board){
+            b = b.replaceAll("0", " ");
+            b = b.replaceAll("1", "#");
+            nuBoard.push(b);
+        }
+        return nuBoard;
+    }
+
+
+    function makeLine(size) {
+
+
+        let line = "0";
+        for (let j = 0; j < size; j++) {
+            let lastChr = line[line.length - 1];
+            line += (Number(!parseInt(lastChr)));
+        }
+
+        return line;
+    }
+</script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mighty mighty chess tones</title>
+</head>
+
+<body>
+    <button id="go">s t a r t </button>
+</body>
+
+
+<script>
+    // Create Audio Context
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+
+    // Configure Tone
+    function tone(length = 500, freq = 440, type = "sine") {
+        console.log(`${freq} for ${length}`);
+        let oscillator = audioCtx.createOscillator();
+        const gainNode = audioCtx.createGain();
+        oscillator.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        // Connect nodes
+        const now = audioCtx.currentTime;
+        oscillator.frequency.value = freq;
+        oscillator.type = type;
+        oscillator.start(now);
+        return new Promise(function (resolve, reject) {
+            window.setTimeout(() => {
+                console.log("done");
+                oscillator.stop();
+                oscillator.disconnect();
+                oscillator = null;
+                resolve();
+            }, length);
+        });
+    }
+
+    let button = document.querySelector("#go");
+
+    button.addEventListener("click", function () {
+        startLoops();
+    });
+
+    async function startLoops() {
+        /*
+        for (let i = 0; i < 1500; i++){
+            await tone(15,i+400);
+        }
+
+        await tone(5000, 20000)
+        */
+        for (let i = 0; i < 5; i++) {
+
+            for (let j = 0; j < 5; j++) {
+                if ((i + j) % 2 == 0) {
+                    await tone(300, 400);
+                } else {
+                    await tone(300, 440, "triangle");
+                }
+            }
+            await tone(5000, 20000)
+            console.log("end of line");
+        }
+
+    }
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ct 120 videos</title>
+    <script src="toc.js" defer></script>
+    <script src="chapters.js" defer></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #DFC9DF;
+            background: radial-gradient(circle, rgba(223, 201, 223, 1) 0%, rgba(201, 223, 223, 1) 50%, rgba(206, 184, 206, 1) 100%);
+            margin: 0;
+            padding: 14px;
+            font-size: 1.5em;
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details ul,
+        details .transcript {
+            cursor: auto;
+        }
+
+        .toc {
+            font-size: 14pt;
+        }
+
+        .transcript {
+            font-size: 12.5pt;
+            max-height: 300px;
+            overflow-y: scroll;
+            max-width: 700px;
+            border: 1px dotted darkblue;
+            padding: 4px;
+        }
+
+        .transcript div:hover,
+        .toc li:hover {
+            cursor: alias;
+        }
+
+        video,
+        .fullimg {
+            display: block;
+            width: 90vw;
+        }
+
+        aside {
+            font-size: .8em;
+        }
+
+        .disc {
+            color: maroon;
+        }
+
+        .notyet {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .duration {
+            opacity: 0;
+            font-family: monospace;
+            font-weight: bold;
+            transition: all 7s ease-out;
+        }
+
+        section {
+            border: 1px dotted rgba(58, 59, 60, 0.5);
+            padding: 8px;
+            margin-bottom: 15px;
+            backdrop-filter: contrast(90%);
+            box-shadow: rgba(15, 0, 13, 0.3) 5px 5px 50px;
+        }
+
+        h1 {
+            font-size: 1em;
+        }
+
+        .tutorial h2 {
+            font-size: .9em;
+            display: inline-block;
+            position: sticky;
+            padding: 3px;
+            top: 0;
+            width: auto;
+            background: rgba(199, 199, 199, 0.3)
+        }
+
+        h3 {
+            font-size: .8em;
+        }
+
+        ol ol {
+            list-style-type: lower-alpha;
+            font-family: monospace;
+
+            /* Changes nested to a, b, c */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>ct 120 video walkthroughs/tutorials/rambles</h1>
+        <ul class="horiz">
+            <li><a href="https://aphid.github.io/ct120/syllabus.html">syllabus</a></li>
+            </li>
+            </li>
+        </ul>
+        <div id="toc">
+            <h2>table of contents</h2>
+            <ol id="oltoc">
+            </ol>
+            <p><span class="disc">disclaimer:</span> captions are generated using speech recognition (locally run, open
+                source model). I've done an editing pass to catch the glaring mistakes, but there will probably still be
+                errors.</p>
+
+            <p>raw video & transcripts can be found <a href="https://aphid.org/ct120/video/">in this directory</a>.</p>
+        </div>
+    </header>
+
+    <section id="refreshers" class="group">
+        <h1>♻️ refreshers ♻️</h1>
+
+        <section class="tutorial" id="types">
+            <h2>types </h2>
+            <h3>booleans, numbers, strings, objects, arrays, and other types</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/types.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/types.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters" src="https://aphid.org/ct120/video/types.chapters.vtt"
+                    srclang="en" default>
+            </video>
+
+            <div class="notes">
+                <ul>
+                    <li>
+                        <a href="../examples/refresher/types.html">t y p e s</a>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+            </ul>
+        </section>
+
+        <section class="tutorial" id="conditionals">
+            <h2>conditionals, logics, needsMoreDog()</h2>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/conditionals.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/conditionals.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters"
+                    src="https://aphid.org/ct120/video/conditionals.chapters.vtt" srclang="en" default>
+            </video>
+
+            <div class="notes">
+                <ul>
+                    <li>
+                        <a href="../examples/refresher/logic_structure.html">logic and structure</a>
+                    </li>
+                    <li>
+                        <a href="../examples/refresher/for.html">for loops (r o s i e)</a>
+                    </li>
+                    <li>
+                        <a href="../examples/refresher/while.html">while loops (needs more dog)</a>
+                    </li>
+                </ul>>
+            </div>
+            <ul>
+            </ul>
+        </section>
+
+    </section>
+
+    <section id="cool_tools" class="group">
+        <h1>third party tools, scripts, and such 🧰🪚🪥🪛🔮🔥</h1>
+
+        <section class="tutorial" id="scriptz">
+            <h2>📜 scripts 📜</h2>
+            <h3>edge cases, async, defer, strudels, and other web pastries</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/scriptz.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/scriptz.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters" src="https://aphid.org/ct120/video/scriptz.chapters.vtt"
+                    srclang="en" default>
+            </video>
+
+            <div class="notes">
+                <p>Note: the <em>defer</em> keyword/attribute only works in SCRIPT tags that have the SRC attribute set.
+                </p>
+            </div>
+            <ul>
+                <li><a href="../examples/script/index.html">live pages from video</a></li>
+                <li><a href="https://strudel.cc/technical-manual/project-start/">strudel's 'use in your project'
+                        guide</a></li>
+                <li><a href="https://github.com/aphid/ct120/tree/main/examples/script/">code on github</a></li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="chesses" class="group">
+        <h1>chess, checkers, &amp;stuff&amp;stuff&amp;stuff</h1>
+        <section class="tutorial" id="chessboard">
+            <h2>🏁 chessboard 🏁 (console & audio edition)</h2>
+            <h3>working through the chessboard exercise</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/chessboard_.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/chessboard.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters"
+                    src="https://aphid.org/ct120/video/chessboard.chapters.vtt" srclang="en" default>
+
+            </video>
+            <p>notes: 400hz is somewhere between a G and a G# (microtones my beloved)</p>
+            <p>await/async is a powerful pattern, but one that took me a long time to wrap my head around. it used to be
+                worse, promises existed before await/async, and if you wrote something that used a promise, you would
+                call that function and follow it with a .then(function(){ //stuff goes here }); and tracking errors was
+                a nightmare.</p>
+            <p>the next version of p5js (2.x branch) makes extensive use of await/async. <a
+                    href="https://dev.to/limzykenneth/asynchronous-p5js-20-458f">see more here</a>.</p>
+            <p>eloquent JS has a <a href="https://eloquentjavascript.net/11_async.html">good chapter on asynchronous
+                    programming</a></p>
+            <ul>
+                <li><a href="https://github.com/aphid/ct120/tree/main/examples/loops">source code</a> and <a
+                        href="https://aphid.github.io/ct120/examples/loops/">live on the
+                        web</a></li>
+
+                <li><a href="https://chelsea-thompto-teaching-examples.github.io/chess-board-example/">Chelsea Thompto's
+                        <em>For Loop Chess Board</em> </a></li>
+                <li><a href="https://aphid.github.io/ct120/examples/loops/chess.html">first example (basic
+                        chessboard)</a></li>
+                <li><a href="https://aphid.github.io/ct120/examples/loops/chessboardarrays.html">second example (binary
+                        string arrays, low key buggy!)</a></li>
+                <li><a href="https://aphid.github.io/ct120/examples/loops/chesstones.html">a chessboard as timed
+                        tones</a></li>
+            </ul>
+        </section>
+
+        <section class="tutorial" id="chessboard2">
+            <h2>🏁🌈 chessboard 🌈🏁 (pt2, p5js edition) </h2>
+            <h3>2 p5 2 p5urious? 😬</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/chessboard2.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/chessboard2.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters"
+                    src="https://aphid.org/ct120/video/chessboard2.chapters.vtt" srclang="en" default>
+            </video>
+
+            <p>notes: i added noStroke() to the multicolor sketch and gave the colors more 🌈 energy</p>
+            <ul>
+                <li><a href="https://editor.p5js.org/aphid/sketches/w6fE0Y4QH">chessboard p5 sketch</a></li>
+                <li><a href="https://editor.p5js.org/aphid/sketches/ejEiFnp-E">multicolor p5 sketch</a></li>
+                <li>ska? don't mind if i do: <a href="https://www.youtube.com/watch?v=YogOkzhoG5Q">Dom Drummond &amp;
+                        the Skatalites: Man in the Street</a></li>
+                <li>idea: what if instead of using the square() function, you made objects with stored coordinates and
+                    colors that draw the squares in the draw loop in the same order as above, but then they start to
+                    drift around, or maybe you add a gravity function (some great physics stuff in The Nature of Code
+                    you could use for this)</li>
+            </ul>
+        </section>
+        <section class="tutorial" id="htmlboard">
+            <h2>🏁⬜🟪⬛ htmlboard ⬛🟪⬜🏁 </h2>
+            <h3>checkers? in my html!?</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/htmlboard.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/htmlboard.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters"
+                    src="https://aphid.org/ct120/video/htmlboard.chapters.vtt" srclang="en" default>
+            </video>
+
+            <nav></nav>
+            <p>notes: i added a thing that looks for ?mode=[mode] in the url to switch background to animaiton</p>
+            <ul>
+                <li><a href="https://github.com/aphid/ct120/blob/main/examples/loops/htmlboard.html">source code</a> for
+                    htmlboard</li>
+                <li><a href="https://aphid.github.io/ct120/examples/loops/htmlboard.html">live code</a> for htmlboard
+                    (B&W) or <a
+                        href="http://localhost/ct120_26s/examples/loops/htmlboard.html?mode=animation">purply-animated</a>
+                </li>
+                <li>🦇🦇🦇 <a href="https://www.youtube.com/watch?v=N7yAe2MBIpE">The Batty Bat</a></li>
+                <li> <a
+                        href="https://external-preview.redd.it/no-this-is-the-coolest-gaming-mouse-you-will-see-today-pic-v0-ECej3jVVKFMAP0q25eemNy4bCUrH3vKYWbUVniOxe1c.jpg?auto=webp&s=ee87c619b9473a427bd8f98a02073b2f1a7ba8f9">collect
+                        your gaming mouse</a>!
+                </li>
+            </ul>
+        </section>
+        <section class="tutorial" id="threeboard">
+            <h2>🧊🧊🧊 three board 🧊🧊🧊 </h2>
+            <h3>(in 3d)</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/threeboard.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/threeboard.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters"
+                    src="https://aphid.org/ct120/video/threeboard.chapters.vtt" srclang="en" default>
+            </video>
+
+            <p>notes: TK</p>
+            <ul>
+                <li><a href="https://github.com/aphid/ct120/tree/main/examples/three">source code</a> for boilerplate
+                    and threeboard</li>
+                <li>
+                    <a href="https://threejs.org/manual/">three js manual</a>
+                </li>
+                <li>
+                    <a href="https://reddit.com/r/threejs/">three js subreddit</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section id="serverside" class="group">
+        <h1>server side, the command line, and related topics</h1>
+        <section class="tutorial" id="clintro">
+            <h2>in the beginning was the command line...</h2>
+            <video controls crossorigin="anonymous" src="">
+                <track crossorigin="anonymous" kind="captions" src="" srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters" src="" srclang="en" default>
+            </video>
+
+
+            <div id="notes">
+                <ul>
+                    <li>Sam Lavigne's <a href="https://scrapism.lav.io/intro-to-the-command-line/">command line
+                            tutorial</a>
+                    </li>
+                    <li><a href="https://nodejs.org/en">Node.js</a></li>
+                    <li><a href="https://www.npmjs.com">npm</a> (node package manager)</li>
+                    <li><a href="https://github.com/nvm-sh/nvm">nvm</a> (node version manager, for macos and linux) and
+                        <a href="https://github.com/coreybutler/nvm-windows">nvm-windows</a> (for windows)
+                    </li>
+                    <li><a href="https://www.duckdns.org/">DuckDNS</a>, useful for having a persistent domain pointing
+                        at a
+                        home
+                        server (especially with an unstable IP address).</li>
+                    <li><a href="https://vercel.com/pricing">vercel</a> serverless hosting</li>
+                    <li><a href="https://www.cloudflare.com/plans/developer-platform/">cloudflare workers</a> serverless
+                        hosting
+                    </li>
+                    <li>DigitalOcean <a href="https://www.digitalocean.com/pricing/droplets">VPS</a>, a virtual server
+                        that
+                        is
+                        effectively a full fledged remote linux box.</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

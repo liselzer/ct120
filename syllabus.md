@@ -14,7 +14,7 @@ An up to date version of this syllabus can be found at: https://aphid.github.io/
 ## Instructor Information
 
 *   **Instructor:** 
-    *   **Name:** Abram Stern, Ph.D. (they/he) ETHAN IS TAKING OVER THE CLASS
+    *   **Name:** Abram Stern, Ph.D. (they/he)
     *   **Email:** [aphid@ucsc.edu](mailto:aphid@ucsc.edu)
     *   **Office Hours:** Tues from 3:05-4:05 (and ad-hoc on Matrix)
 *   **Teaching Assistant:** 
@@ -26,6 +26,7 @@ An up to date version of this syllabus can be found at: https://aphid.github.io/
 
 *   **[Course Canvas]()**
 *   **[Course Zoom]()**
+*   **[Videos](https://aphid.github.io/ct120/video/)  //note, stuff recorded during class is in the YuJa section on Canvas!
 *   **[Readings]()**
 *   **[Office Hour Info]()** (zoom links here)
 
@@ -155,7 +156,7 @@ Unlike in CT 20, documentation isn't explicitly required as part of your turnins
 
 Documentation CAN stand in next to your code on a project you were unable to complete. To receive full credit in this situation, the documentation should communicate the intent of what you've been working on, what you suspect the problem is, and how you attempted to solve it (trial and error? online resources?). 
 
-Documentaiton can take the form of brief articulations of what you've been up to in the class. Document progress, difficulty, interest, confusion, accomplishments, and/or goals. **_Please_**: not all of the above week. These can be in the form of screenshares (video), screenshots (images), text (markdown), hypertext (html), pictures of handwriting, links to git commit messages, console.logs, voice messages. Also a good place to reflect on any readings. Try different modes throughout the quarter. 
+Documentation can take the form of brief articulations of what you've been up to in the class. Document progress, difficulty, interest, confusion, accomplishments, and/or goals. **_Please_**: not all of the above week. These can be in the form of screenshares (video), screenshots (images), text (markdown), hypertext (html), pictures of handwriting, links to git commit messages, console.logs, voice messages. Also a good place to reflect on any readings. Try different modes throughout the quarter. 
 
 ## Code Review
 
@@ -242,10 +243,14 @@ The general arc of the class will be 5ish weeks of client-side (browser-based) J
     * Due: Project Due
 
 
-# weeks 7-10 TBD!
+## Week 7:  (May 12, 14)
+* **Tuesday**: UI work and other research, Lilly Selzer
+* **Thursday**: co(de)-working
+
+## Weeks 8-10:  TBD based on student interests and priorities
+
 
 ## Finals Week: 
-*   
 *   Reminder: Have completed [Code Review](#code-review) by end of finals week
 
 
@@ -268,7 +273,7 @@ Title IX prohibits gender discrimination, including sexual harassment, domestic 
 Faculty and Teaching Assistants are required under the UC Policy on Sexual Violence and Sexual Harassment to inform the Title IX Office should they become aware that you or any other student has experienced sexual violence or sexual harassment. Although I have to make that notification, you will control how your case will be handled, including whether or not you wish to pursue a formal complaint. The goal is to make sure that you are aware of the range of options available to you and that you have access to the resources you need.
  
 #### Justice, Equity, Inclusion
-Numerous campus resources offer support and grievance channels for students concerned about potential injustice, inequity, or exclusionary practices. The Office of Diversity, Equity, and Inclusion <https://diversity.ucsc.edu/index.html> provides resources for students experiencing or observing discrimination, and assists campus partners in cultivating a healthy campus climate in which all students, staff and faculty are treated respectfully and able to thrive and succeed; and everyone including current affiliates, alumni, supporters and community members is welcomed.Students concerned about bias, exclusion, or discrimination may report potential instances at <https://biasresponse.ucsc.edu/>. Please consult resources at the Title IX Office (see above) to report or raise concerns about gender discrimination or harassment, violence, or bullying on the basis of gender and sexuality; the CARE Office <https://care.ucsc.edu/> offers additional resources for survivors of gender- and sexuality-based violence and harassment. The Arts Division is committed to powerful outcomes in the pursuit of justice, equity, and inclusion; more information about those commitments is at <https://arts.ucsc.edu/page/arts-division-diversity-equity-and-inclusion-dei-statement>.
+Numerous campus resources offer support and grievance channels for students concerned about potential injustice, inequity, or exclusionary practices. The [Office of Diversity, Equity, and Inclusion](https://diversity.ucsc.edu/index.html) provides resources for students experiencing or observing discrimination, and assists campus partners in cultivating a healthy campus climate in which all students, staff and faculty are treated respectfully and able to thrive and succeed; and everyone including current affiliates, alumni, supporters and community members is welcomed.Students concerned about bias, exclusion, or discrimination may report potential instances at <https://biasresponse.ucsc.edu/>. Please consult resources at the Title IX Office (see above) to report or raise concerns about gender discrimination or harassment, violence, or bullying on the basis of gender and sexuality; the CARE Office <https://care.ucsc.edu/> offers additional resources for survivors of gender- and sexuality-based violence and harassment. The Arts Division is committed to powerful outcomes in the pursuit of justice, equity, and inclusion; more information about those commitments is at <https://arts.ucsc.edu/page/arts-division-diversity-equity-and-inclusion-dei-statement>.
  
 #### Harassment, bias, and bullying
 The University of California, Santa Cruz expressly prohibits students from engaging in conduct constituting unlawful discrimination, harassment or bias. In keeping with the UCSC Principles of Community, we expect students and their guests to refrain from any acts or behaviors that are directed at other members of the campus community, and that result in unlawful discrimination, harassment or bias for an individual or group, and/or that substantially disrupt University operations or interfere with the rights of others. The campus does not seek to limit freedom of speech but rather strives to ensure that all members of the campus community are able to participate in University programs and activities to the fullest extent possible.

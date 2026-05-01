@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+    <style>
+        #dogpark {
+            background: green;
+            padding: 10px;
+
+        }
+
+        .dog {
+            font-family: monospace;
+            font-size: 4em;
+            margin: 20px;
+            border: 5px dotted purple;
+            background: transparent;
+            transition: background-color 5s linear;
+
+        }
+
+        img {
+            height: auto;
+        } 
+    </style>
+</head>
+
+<body>
+
+    <section id="dogpark"></section>
+
+ 
+    <script>
+        let name = "Rosie";
+        for (let i = 0; i < name.length; i++) {
+            let div = document.createElement("div");
+            div.classList.add("dog");
+            div.innerHTML = name[i] + '<img src="rosie_a.png" alt="a cute gerberian shepsky (that\'s a kind of dog!)">';
+            dogpark.appendChild(div);
+        }
+
+
+        window.setTimeout(function () {
+            for (let div of document.querySelectorAll("div")) {
+                div.style.backgroundColor = "lightgreen";
+            }
+        }, 5000)
+    </script>
+</body>
+
+</html>
