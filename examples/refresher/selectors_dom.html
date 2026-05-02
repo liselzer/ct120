@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refresher on timed content and selectors</title>
+    <style>
+        body {
+            margin: 0;
+            background: black;
+        }
+
+        #full {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #vid {
+            width: 100vw;
+            opacity: 0;
+            transition: opacity 5s ease-out;
+            filter: brightness(30%);
+        }
+
+        #control {
+            position: absolute;
+            bottom: 5px;
+            right: 55px;
+            text-align: right;
+        }
+
+        #after {
+            display: none;
+        }
+
+        #btext {
+            color: papayawhip;
+            font-family: monospace;
+
+        }
+
+        #before {
+            transition: opacity 7s ease-out;
+        }
+
+        #before button {
+            background: black;
+            color: rebeccapurple;
+            font-size: 2em;
+            border: 2px solid pink;
+            opacity: 1;
+        }
+
+        #before button:hover {
+            background: pink;
+            color: black;
+        }
+
+        #picker {
+            writing-mode: vertical-lr;
+        }
+
+        audio {
+            opacity: 0;
+            transition: opacity 5s ease-out;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="full">
+        <video id="vid" src="https://aphid.org/ct120/video/output.mp4" autoplay loop></video>
+
+        <audio controls loop src="https://aphid.org/ct120/video/rtty.mp3">
+
+        </audio>
+
+        <audio controls loop src="https://aphid.org/ct120/video/sttv.mp3">
+
+        </audio>
+
+        <audio controls loop src="https://aphid.org/ct120/video/static.mp3">
+
+        </audio>
+        <div id="control">
+            <div id="before">
+                <p id="btext"></p>
+                <button id="start">start</button>
+            </div>
+            <div id="after">
+                <label for="audio"></label>
+                <input type="range" id="picker" name="audio" min="0" max="2" value="2" list="values">
+
+                <datalist id="values">
+                    <option value="0" label="RTTY"></option>
+                    <option value="1" label="SSTV"></option>
+                    <option value="2" label="static"></option>
+                </datalist>
+            </div>
+        </div>
+    </section>
+    <script>
+        typeTo(btext, "press the button and select a stream");
+
+        start.addEventListener("click", function () {
+            //fade out button
+            before.style.opacity = 0;
+            //when button fades out, do things...
+            before.addEventListener("transitionend", (event) => {
+                vid.style.opacity = 1;
+                vid.playbackRate = 0.25;
+                before.style.display = "none";
+                after.style.display = "block";
+                audIoooo();
+            }, { once: true });
+        }, { once: true });
+
+
+        function typeTo(ele, text) {
+            //if text is a string, make it an array
+            if (typeof text === "string") {
+                //text = text.split(""); this would also work
+                text = [...text];
+            }
+            window.setTimeout(function () {
+                let chr = text.splice(0, 1);
+                ele.textContent = ele.textContent + chr;
+                if (text.length) {
+                    typeTo(ele, text);
+                }
+
+            }, random(95, 455));
+        }
+
+        function audIoooo() {
+            let auds = document.querySelectorAll("audio");
+            let trknum = picker.value;
+
+            //for each audio element...
+            for (let i = 0; i < auds.length; i++) {
+                let aud = auds[i];
+                //fade them up
+                if (!aud.style.opacity) {
+                    aud.style.opacity = 1;
+                }
+
+                console.log(i, trknum);
+
+                //if value of slider matches [i] (nth audio tag), play it. otherwise pause.
+                if (i == trknum) {
+                    aud.play();
+                    console.log(aud, "playing");
+                } else {
+                    aud.pause();
+                }
+            }
+        }
+
+        //when slider value changes, 
+        picker.addEventListener("change", function () {
+            audIoooo();
+        });
+
+
+        function random(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</body>
+
+</html>
