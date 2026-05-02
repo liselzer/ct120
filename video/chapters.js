@@ -49,6 +49,7 @@ function processChapters(vid, track) {
     for (let a  of nav.querySelectorAll("a")){
         a.addEventListener("click",function(event){
             vid.currentTime = this.dataset.start;
+            vid.play();
             event.preventDefault()
         })
     }
