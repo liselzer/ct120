@@ -150,7 +150,7 @@
             </ul>
         </section>
 
-        <section class="tutorial" id="function">
+        <section class="tutorial" id="condition">
             <h2>if/for/while: conditionals, logics, needsMoreDog()</h2>
             <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/conditionals.mp4">
                 <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/conditionals.en.vtt"
@@ -206,7 +206,7 @@
         </section>
 
 
-        <section class="tutorial" id="selectors">
+        <section class="tutorial" id="function">
             <h2>functions(!)</h2>
             <h3>returning, promises, prototypes, rollovers</h3>
             <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/function.mp4">
@@ -220,15 +220,20 @@
                 <h3>notes/links</h3>
                 <ul>
                     <li><a href="../examples/refresher/functions.html">hello world/fiat slug</a></li>
-                    <li><a href="https://editor.p5js.org/aphid/sketches/jSoAdgwIg">balloon sketch</a></li>
-                    <li><a href="../examples/refresher/while.html">static dogs</a></li>
+                    <li><a href="https://editor.p5js.org/aphid/sketches/jSoAdgwIg">balloon sketch</a>
+                        <ul>
+                            <li>remember this one? the physics is ... not so great!</li>
+                            <li>take a look at <a href="https://natureofcode.com/vectors/#acceleration">this chapter</a>
+                                in The Nature of Code for tips on improving it</li>
+                        </ul>
+                    </li>
+                    <li><a href="../examples/refresher/while.html">static dogs</a> (from the conditionals video)</li>
                     <li><a href="../examples/refresher/whileii.html">interactive dogs</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=GM-e46xdcUo">jonathan frakes telling you you're wrong for 47 seconds</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=GM-e46xdcUo">jonathan frakes telling you you're wrong
+                            for 47 seconds</a></li>
                 </ul>
             </div>
         </section>
-
-        <!-- https://natureofcode.com/vectors/#acceleration -->
 
     </section>
 
@@ -402,6 +407,11 @@
             </div>
         </section>
     </section>
+    <script>
+        for (let a of document.querySelectorAll('a')) {
+            a.target = "_blank";
+        }
+    </script>
 </body>
 
 </html>
