@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loops</title>
     <style>
-        body { background: purple; width: 100vw; height: 100vh; overflow: hidden;}
+        body {
+            background: purple;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
     </style>
 </head>
+
 <body>
-    
+
 </body>
 
 <script>
 
 
-    while (!enoughDog()){
+    while (!enoughDog()) {
         needsMoreDog();
     }
 
-    function enoughDog(){
+    function enoughDog() {
         let dogCount = document.querySelectorAll("img").length;
-        if (dogCount < 50){
+        if (dogCount < 50) {
             return false;
         }
         //this is an important pattern!
         return true;
     }
+    /*
+    window.setInterval(function () {
+        for (let d of document.querySelectorAll("img")) {
+            d.style.top = parseInt(d.style.top) + random(-3, 3) + "px";
+            d.style.left = parseInt(d.style.left) + random(-3, 3) + "px";
+        }
+    }, 5)*/
 
-
-
-    function needsMoreDog(){
+    function needsMoreDog() {
         let maxW = window.innerWidth;
         let maxH = window.innerHeight;
 
@@ -38,18 +50,19 @@
         img.src = "rosie_a.png";
         img.alt = "a very cute black and white dog with their mouth open";
         img.style.position = "absolute";
-        img.style.left = random(0,maxW) + "px";
-        img.style.top = random(0,maxH) + "px";
-        img.style.rotate = random(-90,90) + "deg";
-        img.width = random(20,450);
+        img.style.left = random(0, maxW) + "px";
+        img.style.top = random(0, maxH) + "px";
+        img.style.rotate = random(-90, 90) + "deg";
+        img.width = random(20, 450);
         img.style.zIndex = 1000 - parseInt(img.width);
         document.body.appendChild(img);
         return true;
     }
 
 
-    function random(min,max){
+    function random(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 </script>
+
 </html>
