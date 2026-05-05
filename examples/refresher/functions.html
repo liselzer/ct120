@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>function()</title>
+    <style>
+
+        video { display: none;}
+    </style>
 </head>
+
+
 <body>
-    
+    <video src="https://aphid.org/ct120/video/conditionals.mp4"></video>
+
 </body>
+
+<script>
+
+    const helloWorld = function(){
+        console.log("hello world!");
+        return true;
+    }
+
+    function fiatSlug(){
+        return "fiat slug!";
+        console.log("not this time");
+    }
+
+    console.log(helloWorld());
+    console.log(fiatSlug());
+
+    async function doTheThing() {
+        let vid = await vidIsReady();
+        console.log(vid);
+    }
+
+    function vidIsReady() {
+        return new Promise(function (resolve, reject) {
+            let video = document.querySelector("video");
+            video.addEventListener("canplaythrough", v => {
+                console.log("event fired", Date.now());
+                resolve(true);
+            }, { once: true });
+
+
+            window.setTimeout(function(){
+                reject("took too long");
+            }, 150);
+
+        });
+    }
+    doTheThing();
+</script>
+
 </html>

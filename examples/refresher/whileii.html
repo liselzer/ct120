@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+    <style>
+        body {
+            background: url("../night_sky.gif");
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .dog {
+            transition: all 9s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    let dogs = [];
+
+    function Dog() {
+        let maxW = window.innerWidth;
+        let maxH = window.innerHeight;
+
+        let img = document.createElement("img");
+        img.src = "rosie_a.png";
+        img.alt = "a very cute black and white dog with their mouth open";
+        img.style.position = "absolute";
+        img.classList.add("dog");
+        this.img = img;
+        this.x = random(0, maxW);
+        this.y = random(0, maxH);
+        this.r = random(-90, 90);
+        this.w = random(20, 450);
+        img.style.left = -this.x + "px";
+        img.style.top = -this.y + "px";
+        img.style.rotate = 0 + "deg";
+        img.width = 0;
+        img.style.zIndex = 1000 - parseInt(img.width);
+        document.body.appendChild(img);
+        let dog = this;
+        window.setTimeout(function(){
+            dog.position()
+        }, random(3000,22000))
+
+        img.addEventListener("click", function(){
+            for (let d of dogs){
+                d.rollOver();
+            }
+        })
+    
+
+    }
+
+    Dog.prototype.position = function(){  
+        let img = this.img;
+        img.style.left = this.x + "px";
+        img.style.top = this.y + "px";
+        img.style.rotate = this.r + "deg";
+        img.width = this.w;
+    }
+
+    Dog.prototype.pawsition = function(x,y,r,w){
+        if (!x || !y){
+            console.log("no paws")
+            return false;
+        }
+        this.x = x;
+        this.y = y;
+        if (r){
+            this.r = r;
+        }
+        if (w){
+            this.w = w;
+        }
+        this.position();
+    }
+
+    Dog.prototype.rollOver = function(){
+        this.r += 720;
+        this.position();
+
+    }
+
+
+    while (!enoughDog()) {
+        needsMoreDog();
+    }
+
+    function enoughDog() {
+        let dogCount = document.querySelectorAll("img").length;
+        if (dogCount < 50) {
+            return false;
+        }
+        //this is an important pattern!
+        return true;
+    }
+
+
+    function needsMoreDog() {
+        dogs.push(new Dog())
+
+        return true;
+    }
+
+
+    function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>
+
+</html>

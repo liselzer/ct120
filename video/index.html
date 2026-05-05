@@ -128,6 +128,7 @@
     <section id="refreshers" class="group">
         <h1>♻️ refreshers ♻️</h1>
 
+
         <section class="tutorial" id="types">
             <h2>types </h2>
             <h3>booleans, numbers, strings, objects, arrays, and other types</h3>
@@ -141,7 +142,7 @@
             <div class="notes">
                 <ul>
                     <li>
-                        <a href="../examples/refresher/types.html">t y p e s</a>
+                        <a href="../examples/refresher/types.html">live code</a>for types
                     </li>
                 </ul>
             </div>
@@ -149,8 +150,8 @@
             </ul>
         </section>
 
-        <section class="tutorial" id="conditionals">
-            <h2>conditionals, logics, needsMoreDog()</h2>
+        <section class="tutorial" id="condition">
+            <h2>if/for/while: conditionals, logics, needsMoreDog()</h2>
             <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/conditionals.mp4">
                 <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/conditionals.en.vtt"
                     srclang="en" default>
@@ -169,10 +170,69 @@
                     <li>
                         <a href="../examples/refresher/while.html">while loops (needs more dog)</a>
                     </li>
-                </ul>>
+                </ul>
             </div>
             <ul>
             </ul>
+        </section>
+        <section class="tutorial" id="selectors">
+            <h2>selectors, timed elements </h2>
+            <h3>ids, classes, timeouts, and static</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/selectors.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/selectors.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters"
+                    src="https://aphid.org/ct120/video/selectors.chapters.vtt" srclang="en" default>
+            </video>
+
+            <div class="notes">
+                <ul>
+                    <li>the radio noise page source and <a href="../examples/refresher/logic_structure.html">live</a>
+                    </li>
+                    <li>Arrays have <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice</a>
+                        and <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice</a>,
+                        where splice is a destructive version of slice (meaning it changes the array it acts on rather
+                        than returning a <a
+                            href="https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy">shallow copy</a>).
+                    </li>
+                    <li>Strings have a <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice">slice</a>
+                        method (functionally identical to the array method but on letters not array items), but no
+                        splice.</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="tutorial" id="function">
+            <h2>functions(!)</h2>
+            <h3>returning, promises, prototypes, rollovers</h3>
+            <video controls crossorigin="anonymous" src="https://aphid.org/ct120/video/function.mp4">
+                <track crossorigin="anonymous" kind="captions" src="https://aphid.org/ct120/video/function.en.vtt"
+                    srclang="en" default>
+                <track crossorigin="anonymous" kind="chapters" src="https://aphid.org/ct120/video/function.chapters.vtt"
+                    srclang="en" default>
+            </video>
+
+            <div class="notes">
+                <h3>notes/links</h3>
+                <ul>
+                    <li><a href="../examples/refresher/functions.html">hello world/fiat slug</a></li>
+                    <li><a href="https://editor.p5js.org/aphid/sketches/jSoAdgwIg">balloon sketch</a>
+                        <ul>
+                            <li>remember this one? the physics is ... not so great!</li>
+                            <li>take a look at <a href="https://natureofcode.com/vectors/#acceleration">this chapter</a>
+                                in The Nature of Code for tips on improving it</li>
+                        </ul>
+                    </li>
+                    <li><a href="../examples/refresher/while.html">static dogs</a> (from the conditionals video)</li>
+                    <li><a href="../examples/refresher/whileii.html">interactive dogs</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=GM-e46xdcUo">jonathan frakes telling you you're wrong
+                            for 47 seconds</a></li>
+                </ul>
+            </div>
         </section>
 
     </section>
@@ -347,6 +407,11 @@
             </div>
         </section>
     </section>
+    <script>
+        for (let a of document.querySelectorAll('a')) {
+            a.target = "_blank";
+        }
+    </script>
 </body>
 
 </html>
